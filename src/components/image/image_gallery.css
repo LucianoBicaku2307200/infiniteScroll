@@ -1,0 +1,130 @@
+.container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite;
+  margin-top: 30px;
+}
+.card_container {
+  width: 25%;
+  padding: 5px;
+  height: 400px;
+  position: relative;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(3px 4px 3px rgba(47, 47, 47, 0.18));
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+}
+.card_info {
+  color: #ffffff;
+  position: absolute;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    180deg,
+    rgba(143, 139, 139, 0) 1.31%,
+    rgba(82, 80, 79, 0.479167) 49.39%,
+    #0e0f0e 100%
+  );
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.author_img {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+.card_info h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.card_info p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.card_data {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+.card_data > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card_data svg {
+  margin: 5px;
+  width: 9px;
+  height: 9px;
+  transform: scale3d(1.5, 1.5, 1.5);
+}
+.card_info a {
+  padding: 3px 20px 3px 20px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.6s ease-in-out;
+}
+
+.card_info a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  .card_container {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card_container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .card_container {
+    width: 100%;
+  }
+}
